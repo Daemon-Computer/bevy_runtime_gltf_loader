@@ -7,7 +7,7 @@ mod plugin;
 
 pub use config_singleton::*;
 pub use extend_gltf_material::*;
-pub use part_path::*;
 pub use part_loader::*;
+pub use part_path::*;
 pub use parts_map::*;
 pub use plugin::*;

@@ -1,7 +1,9 @@
 use crate::{EmptyMaterialExtension, WithMaterialExtension};
 use bevy::asset::AssetServer;
 use bevy::pbr::MaterialExtension;
-use bevy::prelude::{BuildChildrenTransformExt, Commands, Entity, GltfAssetLabel, Res, SceneRoot, Transform};
+use bevy::prelude::{
+    BuildChildrenTransformExt, Commands, Entity, GltfAssetLabel, Res, SceneRoot, Transform,
+};
 use std::marker::PhantomData;
 
 pub struct PartLoader<'a, EXTENSION, MATERIAL = EmptyMaterialExtension> {

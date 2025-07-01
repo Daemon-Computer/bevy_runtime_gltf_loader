@@ -1,8 +1,8 @@
+use crate::part_loader::PartLoader;
+use bevy::prelude::BevyError;
+use serde::{Deserialize, Serialize};
 use std::error::Error;
 use std::fmt::Display;
-use bevy::prelude::BevyError;
-use crate::part_loader::PartLoader;
-use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct PartPath<EXTENSION> {
