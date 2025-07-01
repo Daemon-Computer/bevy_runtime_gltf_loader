@@ -11,7 +11,8 @@ use std::marker::PhantomData;
 
 pub type SimpleRuntimeGltfLoaderPlugin = RuntimeGlftLoaderPlugin<EmptyExtension>;
 
-pub struct RuntimeGlftLoaderPlugin<EXTENSION, STATE = EmptyState, MATERIAL = EmptyMaterialExtension> {
+pub struct RuntimeGlftLoaderPlugin<EXTENSION, STATE = EmptyState, MATERIAL = EmptyMaterialExtension>
+{
     file_ending: &'static str,
     // Load a single config as a resource
     load_single: Option<LoadSingleConfig<STATE>>,

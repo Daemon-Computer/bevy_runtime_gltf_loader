@@ -4,7 +4,7 @@ use bevy::prelude::{
     App, AppExtStates, Camera3d, Commands, NextState, OnEnter, PointLight, Res, ResMut, States,
     Transform, Vec3, default,
 };
-use bevy_runtime_gltf_loader::{SimpleRuntimeGltfLoaderPlugin, SimplePartsMap};
+use bevy_runtime_gltf_loader::{SimplePartsMap, SimpleRuntimeGltfLoaderPlugin};
 
 #[derive(States, Default, Copy, Clone, Debug, PartialEq, Eq, Hash)]
 enum RuntimeState {

@@ -17,7 +17,8 @@ impl<EXTENSION: Asset> Default for PartsMap<EXTENSION> {
 
 impl<EXTENSION: Asset> PartsMap<EXTENSION> {
     pub fn load_part(&self, name: &str) -> Result<&PartPath<EXTENSION>, BevyError> {
-        self.get(name).ok_or(BevyError::from(PartNotFoundError::new(name)))
+        self.get(name)
+            .ok_or(BevyError::from(PartNotFoundError::new(name)))
     }
 }
 
